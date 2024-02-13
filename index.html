@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sketch</title>
+    <title>Psychedelic Sand</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -13,6 +13,29 @@
   </head>
 
   <body>
+    <div class="sliderCont">
+      <div class="slider">
+        <p id="sizeDisplay">Size</p>
+  <input type="range" min="7" max="20" value="10" id="wSlider">
+      </div>
+      <div class="slider">
+        <p id="matrixDisplay">Matrix</p>
+        <input type="range" min="1" max="10" value="5" id="matrixSlider">
+      </div>
+      <div class="slider">
+        <p id="hueDisplay">Hue</p>
+        <input type="range" min="0" max="360" value="20" id="hueSlider">
+      </div>
+      
+      <div class="slider">
+        <p id="speedDisplay">Speed</p>
+        <input type="range" min="1" max="10" value="3" id="nSlider">
+      </div>
+    </div>
+  
+
+
+
     <script src="sketch.js"></script>
   </body>
 </html>

@@ -7,3 +7,20 @@ html, body {
 canvas {
   display: block;
 }
+
+.sliderCont{
+  display:flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.619);
+  position: absolute;
+  gap:1em;
+  
+}
+
+.slider{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:.25em;
+color: white;
+}
