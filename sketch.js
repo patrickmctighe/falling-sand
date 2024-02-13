@@ -7,7 +7,6 @@ function make2DArray(cols, rows) {
 }
 
 let wSlider, matrixSlider, hueSlider, nSlider;
-
 let grid;
 let w = 10;
 let cols, rows;
@@ -24,13 +23,9 @@ function insideRows(j) {
 
 function setup() {
   wSlider = select("#wSlider");
-
   wSlider.input(resizeGrid);
-
   matrixSlider = select("#matrixSlider");
-
   hueSlider = select("#hueSlider");
-
   nSlider = select("#nSlider");
 
   w = wSlider.value();
@@ -39,11 +34,12 @@ function setup() {
   cols = Math.floor(width / w);
   rows = Math.floor(height / w);
   grid = make2DArray(cols, rows);
-
   for (let i = 0; i < cols; i++) {
     grid[i][0] = hueValue;
   }
 }
+
+
 function resizeGrid() {
   w = wSlider.value();
   cols = (width / w) >> 0;
